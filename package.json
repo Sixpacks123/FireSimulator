@@ -1,0 +1,11 @@
+{
+  "name": "simulatorFire",
+  "version": "1.0.0",
+  "description": "Application de simulation de feux de forêt (automates",
+  "main": "index.js",
+  "author": "Heurtault Aubin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2"
+  }
+}
