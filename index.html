@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forest Fire Simulation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h2>Simulation Controls</h2>
+        
+        <div class="control-group">
+          <label>Terrain Type:</label>
+          <select id="terrainType">
+            <option value="1.0">Continuous</option>
+            <option value="0.95">Slightly Spaced</option>
+            <option value="0.8">Spaced</option>
+            <option value="0.5">Scattered</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label>Wind Force:</label>
+          <select id="windForce">
+            <option value="0">None</option>
+            <option value="1">Moderate</option>
+            <option value="2">Strong</option>
+            <option value="3">Violent</option>
+          </select>
+          
+          <label>Wind Direction:</label>
+          <select id="windDirection">
+            <option value="0">North (↑)</option>
+            <option value="90">East (→)</option>
+            <option value="180">South (↓)</option>
+            <option value="270">West (←)</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label>Soil Moisture:</label>
+          <select id="soilMoisture">
+            <option value="0.1">Wet</option>
+            <option value="0.3">Normal</option>
+            <option value="0.6">Dry</option>
+            <option value="0.9">Very Dry</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <button id="startSimulation">Start Simulation</button>
+          <button id="pauseSimulation">Pause</button>
+          <button id="resetSimulation">Reset</button>
+          
+          <label>Simulation Speed:</label>
+          <div class="speed-control">
+            <input type="range" id="simulationSpeed" min="1" max="100" value="60">
+            <span id="speedValue">60 FPS</span>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <button id="drawRoad">Draw Road</button>
+          <button id="clearRoad">Clear Road</button>
+        </div>
+      </div>
+
+      <div class="simulation-area">
+        <canvas id="simulationCanvas"></canvas>
+        <div id="statistics">
+          <h3>Statistics</h3>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span>Burning:</span>
+              <span id="burningPercent">0%</span>
+            </div>
+            <div class="stat-item">
+              <span>Vegetation:</span>
+              <span id="vegetationPercent">0%</span>
+            </div>
+            <div class="stat-item">
+              <span>Burned:</span>
+              <span id="burnedPercent">0%</span>
+            </div>
+            <div class="stat-item">
+              <span>Empty:</span>
+              <span id="emptyPercent">0%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/renderer.ts"></script>
+  </body>
+</html>
