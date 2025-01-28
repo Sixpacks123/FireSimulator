@@ -54,3 +54,62 @@ Versions disponibles :
 
 ## 📝 Notes de Version
 Consultez le [CHANGELOG](lien-vers-changelog) pour les détails des mises à jour.
+
+## Build et Publication
+
+### Build local
+
+Pour créer un build local :
+
+```bash
+# Crée un package sans installeur
+yarn package
+
+# Crée un installeur pour votre plateforme
+yarn make
+```
+
+### Publication
+
+1. Mettez à jour la version dans `package.json`:
+```json
+{
+  "version": "1.0.1",  // Incrémentez ce numéro
+}
+```
+
+2. Créez un tag Git :
+```bash
+git add .
+git commit -m "Version 1.0.1"
+git tag v1.0.1
+git push && git push --tags
+```
+
+3. Publiez l'application :
+```bash
+yarn publish
+```
+
+## Configuration de la Publication
+
+Pour configurer la publication automatique, ajoutez ces variables d'environnement :
+
+- `GITHUB_TOKEN`: Token d'accès GitHub avec permissions `repo`
+- Créez un fichier `.env` à la racine :
+```
+GITHUB_TOKEN=votre_token_github
+```
+
+## Structure du Projet
+
+```
+.
+├── src/                # Code source
+│   ├── main.ts        # Process principal
+│   ├── preload.ts     # Script de preload
+│   └── renderer.ts    # Process de rendu
+├── assets/            # Resources statiques
+├── forge.config.ts    # Configuration Electron Forge
+└── vite.*.config.ts   # Configurations Vite
+```
