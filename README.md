@@ -1,6 +1,6 @@
 # Simulateur de Feu de Forêt 🔥
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/votre-repo)
+[![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](https://github.com/Sixpacks123/FireSimulator/releases/tag/v2.2.0)
 [![Electron](https://img.shields.io/badge/electron-latest-brightgreen.svg)](https://www.electronjs.org/)
 
 ## 📋 À propos
@@ -26,8 +26,8 @@ npm run test
 ## 📥 Téléchargement
 
 Versions disponibles :
-- [Version 1.1.0](lien-vers-v1.1.0) - Dernière version
-- [Version 1.0.0](lien-vers-v1.0.0) - Version initiale
+- [Version 1.1.0](https://github.com/Sixpacks123/FireSimulator/releases/tag/v2.2.0) - Dernière version
+- [Version 1.0.0](https://github.com/Sixpacks123/FireSimulator/releases/tag/v1.0.0) - Version initiale no electron
 
 ## 📚 Documentation
 
