@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](https://github.com/Sixpacks123/FireSimulator/releases/tag/v2.2.0)
 [![Electron](https://img.shields.io/badge/electron-latest-brightgreen.svg)](https://www.electronjs.org/)
 
+
 ## 📋 À propos
 Application de simulation de propagation de feux de forêt utilisant des automates cellulaires et une approche événementielle.
 
