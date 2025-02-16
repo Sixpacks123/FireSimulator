@@ -32,13 +32,12 @@ Versions disponibles :
 ## 📚 Documentation
 
 ### Spécifications Techniques
-- [Cahier des charges](lien-vers-cahier-des-charges)
-- [Documentation technique](lien-vers-doc-technique)
+- [Cahier des charges](docs/cahier-des-charges.md)
+- [Documentation technique](docs/documentation-technique.md)
 
 ### Ressources Utiles
 - [Documentation Electron](https://www.electronjs.org/docs)
-- [Simulation à événements discrets](lien-vers-ressource)
-- [Automates cellulaires](lien-vers-ressource)
+
 
 ## 🔧 Aspects Techniques
 
@@ -53,7 +52,7 @@ Versions disponibles :
 - Interface utilisateur réactive
 
 ## 📝 Notes de Version
-Consultez le [CHANGELOG](lien-vers-changelog) pour les détails des mises à jour.
+Consultez le [CHANGELOG](https://github.com/Sixpacks123/FireSimulator/releases) pour les détails des mises à jour.
 
 ## Build et Publication
 
