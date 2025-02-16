@@ -35,6 +35,8 @@ Versions disponibles :
 ### Spécifications Techniques
 - [Cahier des charges](docs/cahier-des-charges.md)
 - [Documentation technique](docs/documentation-technique.md)
+- [Diagrams](docs/diagrams-uml.md)
+- [Checklist](docs/checklist.md)
 
 ### Ressources Utiles
 - [Documentation Electron](https://www.electronjs.org/docs)
