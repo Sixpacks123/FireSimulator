@@ -74,22 +74,24 @@ yarn make
 1. Mettez à jour la version dans `package.json`:
 ```json
 {
-  "version": "1.0.1",  // Incrémentez ce numéro
+  "version": "2.1.1"  // Incrémentez ce numéro
 }
 ```
 
-2. Créez un tag Git :
+2. Créez un tag Git et committez :
 ```bash
 git add .
-git commit -m "Version 1.0.1"
-git tag v1.0.1
+git commit -m "Release v2.1.1"
+git tag v2.1.1
 git push && git push --tags
 ```
 
-3. Publiez l'application :
+3. Publiez l'application sur GitHub :
 ```bash
-yarn publish
+yarn run publish
 ```
+
+Note : Cette commande utilisera electron-forge pour publier sur GitHub. Assurez-vous d'avoir défini la variable d'environnement `GITHUB_TOKEN`.
 
 ## Configuration de la Publication
 
