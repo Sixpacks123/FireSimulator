@@ -23,7 +23,7 @@ npm run start
 ```bash
 npm run test
 ```
-
+![home](docs/home.png)
 ## 📥 Téléchargement
 
 Versions disponibles :
