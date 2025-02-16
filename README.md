@@ -1,7 +1,8 @@
 # Simulateur de Feu de Forêt 🔥
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/votre-repo)
+[![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)](https://github.com/Sixpacks123/FireSimulator/releases/tag/v2.2.0)
 [![Electron](https://img.shields.io/badge/electron-latest-brightgreen.svg)](https://www.electronjs.org/)
+
 
 ## 📋 À propos
 Application de simulation de propagation de feux de forêt utilisant des automates cellulaires et une approche événementielle.
@@ -22,23 +23,22 @@ npm run start
 ```bash
 npm run test
 ```
-
+![home](docs/home.png)
 ## 📥 Téléchargement
 
 Versions disponibles :
-- [Version 1.1.0](lien-vers-v1.1.0) - Dernière version
-- [Version 1.0.0](lien-vers-v1.0.0) - Version initiale
+- [Version 1.1.0](https://github.com/Sixpacks123/FireSimulator/releases/tag/v2.2.0) - Dernière version
+- [Version 1.0.0](https://github.com/Sixpacks123/FireSimulator/releases/tag/v1.0.0) - Version initiale no electron
 
 ## 📚 Documentation
 
 ### Spécifications Techniques
-- [Cahier des charges](lien-vers-cahier-des-charges)
-- [Documentation technique](lien-vers-doc-technique)
+- [Cahier des charges](docs/cahier-des-charges.md)
+- [Documentation technique](docs/documentation-technique.md)
 
 ### Ressources Utiles
 - [Documentation Electron](https://www.electronjs.org/docs)
-- [Simulation à événements discrets](lien-vers-ressource)
-- [Automates cellulaires](lien-vers-ressource)
+
 
 ## 🔧 Aspects Techniques
 
@@ -53,7 +53,7 @@ Versions disponibles :
 - Interface utilisateur réactive
 
 ## 📝 Notes de Version
-Consultez le [CHANGELOG](lien-vers-changelog) pour les détails des mises à jour.
+Consultez le [CHANGELOG](https://github.com/Sixpacks123/FireSimulator/releases) pour les détails des mises à jour.
 
 ## Build et Publication
 
@@ -114,4 +114,58 @@ GITHUB_TOKEN=votre_token_github
 ├── assets/            # Resources statiques
 ├── forge.config.ts    # Configuration Electron Forge
 └── vite.*.config.ts   # Configurations Vite
+```
+
+## 🧪 Tests
+
+### Configuration
+Les tests utilisent Jest avec TypeScript. Configuration dans `jest.config.js`.
+
+### Exécution des Tests
+```bash
+# Lancer tous les tests
+yarn test
+
+# Lancer les tests avec couverture
+yarn test --coverage
+
+# Lancer un fichier de test spécifique
+yarn test src/tests/Grid.test.ts
+
+# Mode watch pour développement
+yarn test --watch
+```
+
+### Structure des Tests
+```
+src/
+└── tests/
+    ├── Grid.test.ts     # Tests de la grille a moitier implémenté
+    ├── Cell.test.ts     # Tests des cellules pas fait
+    ├── Wind.test.ts     # Tests du vent pas fait
+    └── Integration/     # Tests d'intégration pas fait
+```
+
+### Écrire de Nouveaux Tests
+Exemple de structure de test :
+```typescript
+describe('Composant', () => {
+  beforeEach(() => {
+    // Setup
+  });
+
+  test('devrait faire quelque chose', () => {
+    // Arrange
+    // Act
+    // Assert
+  });
+});
+```
+
+### Coverage
+La couverture actuelle des tests :
+- Grid : 80%
+- Cell : À implémenter
+- Wind : À implémenter
+- Integration : À implémenter
 ```
