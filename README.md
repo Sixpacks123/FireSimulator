@@ -27,7 +27,7 @@ npm run test
 ## 📥 Téléchargement
 
 Versions disponibles :
-- [Version 1.1.0](https://github.com/Sixpacks123/FireSimulator/releases/tag/v2.2.0) - Dernière version
+- [Version 2.3.0](https://github.com/Sixpacks123/FireSimulator/releases/tag/untagged-ef3ee7c855a03033e7ef) - Dernière version
 - [Version 1.0.0](https://github.com/Sixpacks123/FireSimulator/releases/tag/v1.0.0) - Version initiale no electron
 
 ## 📚 Documentation
