@@ -114,3 +114,57 @@ GITHUB_TOKEN=votre_token_github
 ├── forge.config.ts    # Configuration Electron Forge
 └── vite.*.config.ts   # Configurations Vite
 ```
+
+## 🧪 Tests
+
+### Configuration
+Les tests utilisent Jest avec TypeScript. Configuration dans `jest.config.js`.
+
+### Exécution des Tests
+```bash
+# Lancer tous les tests
+yarn test
+
+# Lancer les tests avec couverture
+yarn test --coverage
+
+# Lancer un fichier de test spécifique
+yarn test src/tests/Grid.test.ts
+
+# Mode watch pour développement
+yarn test --watch
+```
+
+### Structure des Tests
+```
+src/
+└── tests/
+    ├── Grid.test.ts     # Tests de la grille a moitier implémenté
+    ├── Cell.test.ts     # Tests des cellules pas fait
+    ├── Wind.test.ts     # Tests du vent pas fait
+    └── Integration/     # Tests d'intégration pas fait
+```
+
+### Écrire de Nouveaux Tests
+Exemple de structure de test :
+```typescript
+describe('Composant', () => {
+  beforeEach(() => {
+    // Setup
+  });
+
+  test('devrait faire quelque chose', () => {
+    // Arrange
+    // Act
+    // Assert
+  });
+});
+```
+
+### Coverage
+La couverture actuelle des tests :
+- Grid : 80%
+- Cell : À implémenter
+- Wind : À implémenter
+- Integration : À implémenter
+```
