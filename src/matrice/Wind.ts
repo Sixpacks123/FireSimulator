@@ -5,18 +5,20 @@ export enum WindDirection {
   West = 270
 }
 
+export type WindForce = 0 | 1 | 2 | 3;
+
 export class Wind {
-  private force: number;
+  private force: WindForce;
   private direction: WindDirection;
 
-  constructor(initialForce: number = 0, initialDirection: WindDirection = WindDirection.North) {
+  constructor(initialForce: WindForce = 0, initialDirection: WindDirection = WindDirection.North) {
     this.force = initialForce;
     this.direction = initialDirection;
   }
 
   public setForce(force: number): void {
     if (force >= 0 && force <= 3) {
-      this.force = force;
+      this.force = force as WindForce;
     }
   }
 
@@ -24,7 +26,7 @@ export class Wind {
     this.direction = direction;
   }
 
-  public getForce(): number {
+  public getForce(): WindForce {
     return this.force;
   }
 
